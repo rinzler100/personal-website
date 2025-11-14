@@ -1,47 +1,365 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Magical Cat | Developer">
-    <meta name="description" content="Hi there! I am a developer, please check out my projects!">
-    <meta name="og:type" content="website">
-    <meta name="og:site_name" content="Magical Cat">
-    <meta name="og:title" content="Magical Cat">
-    <meta name="og:description" content="Hi there! I am a developer, please check out my projects!">
-    <meta name="theme-color" content="#3b96d9">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Electro Cloud | Software Developer">
+    <meta name="description" content="Portfolio of Electro Cloud - Software Developer studying Computer Science at UNCW. Explore my projects and get in touch.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Electro Cloud">
+    <meta property="og:title" content="Electro Cloud | Software Developer">
+    <meta property="og:description" content="Portfolio of Electro Cloud - Software Developer studying Computer Science at UNCW.">
+    <meta name="theme-color" content="#6366f1">
 
-    <title>Magical Cat | Developer</title>
+    <title>Electro Cloud | Software Developer</title>
 
     <link rel="shortcut icon" type="image/jpg" href="assets/pfp.jpg" />
     <link href="assets/style.css" rel="stylesheet" type="text/css" />
-</head>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
-    <div id="particles-js">
-        <div id="notice"><b>&nbsp;__<br>&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;_<br>&nbsp;&nbsp;\**\&nbsp;___\/&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/----------------------------------------------/<br>X*#####*+^^\_\-&lt;|&nbsp;Hello visitor! Enjoy your stay :) |<br>&nbsp;&nbsp;o/\&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\----------------------------------------------\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\__\<br></b></div>
-        <div id="profile">
-            <center>
-                <h1>Hi! I am Magical Cat!</h1>
-                <h2>I create stuff and... things.</h2>
-                <h3>Email: <a href="mailto:contact@magicalcat.xyz">contact@magicalcat.xyz</a> <br> Discord: <a href="https://discord.com/users/816041207113187348">Magical Cat#1172</a> <br> Github: <a href="https://github.com/hendersonyang">Henderson Yang</a></h3>
-                <img src="assets/pfp.jpg" class="pfp"></img>
-            </center>
-        </div>
-        <div id="projects">
-            <center>
-                <h1>Projects</h1>
-                <h2>Feel free to contact me with ideas! <br><br> Just a few things I have been working on recently: </h2>
-                <h3><i>Coming Soon!</i></h3>
-            </center>
-        </div>
-        <bottom>
-            <b>Created By: Henderson Yang <br>Edited By: Electro Cloud <br> Last Updated On: September 7, 2022</b>
-        </bottom>
+    <!-- Animated Background -->
+    <div class="background-gradient"></div>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
     </div>
-    <script src="assets/particles.min.js"></script>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">EC</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Studying at UNCW
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Electro Cloud</span>
+                    </h1>
+                    <p class="hero-subtitle">Software Developer</p>
+                    <p class="hero-description">
+                        Computer Science student at UNCW passionate about building elegant solutions
+                        and crafting seamless user experiences. Turning ideas into reality through code.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/rinzler100" class="social-link" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/Electro_Cloud" class="social-link" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:personal@cloudydestiny.com" class="social-link">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image profile-abstract">
+                                <span class="profile-initials">EC</span>
+                            </div>
+                            <div class="profile-ring"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="glass-card about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Developer</h3>
+                    <p>Crafting clean, efficient code and building robust applications with modern technologies.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Designer</h3>
+                    <p>Creating intuitive, beautiful interfaces with attention to detail and user experience.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Solutions Architect</h3>
+                    <p>Designing scalable systems and architecting elegant solutions for complex problems.</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h3 class="skills-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Dart</div>
+                    <div class="skill-tag">Flutter</div>
+                    <div class="skill-tag">API Development</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">JavaScript</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Tool</span>
+                            <span class="tag">App</span>
+                            <span class="tag">Clipboard</span>
+                            <span class="tag">Flutter</span>
+                        </div>
+                        <h3 class="project-title">Crossy Clipboard</h3>
+                        <p class="project-description">
+                            A simpler, more reliable way for clipboard syncing, sending yourself files, and nearby content sharing. It just works. Now in early beta!
+                        </p>
+                        <div class="project-links">
+                            <a href="https://crossyclip.com" class="project-link" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Visit Site
+                            </a>
+                            <a href="https://github.com/Crossy-Clipboard" class="project-link" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">Backend</span>
+                        </div>
+                        <h3 class="project-title">Project Two</h3>
+                        <p class="project-description">
+                            Robust API service with high performance and scalability in mind.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Full Stack</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <h3 class="project-title">Project Three</h3>
+                        <p class="project-description">
+                            Full-stack application with modern architecture and beautiful UI.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add More Projects Card -->
+                <div class="project-card glass-card coming-soon-card">
+                    <div class="coming-soon-content">
+                        <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <h3>More Coming Soon</h3>
+                        <p>Exciting projects in development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly chat</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-cards">
+                    <a href="mailto:personal@cloudydestiny.com" class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>personal@cloudydestiny.com</p>
+                    </a>
+                    <a href="https://github.com/rinzler100" class="contact-card glass-card" target="_blank" rel="noopener">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>rinzler100</p>
+                    </a>
+                    <a href="https://x.com/Electro_Cloud" class="contact-card glass-card" target="_blank" rel="noopener">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                        <h3>Twitter</h3>
+                        <p>@Electro_Cloud</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Electro Cloud. Crafted with passion and code.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="assets/script.js"></script>
 </body>
-
 </html>
