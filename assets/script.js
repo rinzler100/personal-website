@@ -197,10 +197,10 @@ projectCards.forEach(card => {
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
 
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
+        const rotateX = (y - centerY) / 50;
+        const rotateY = (centerX - x) / 50;
 
-        this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+        this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
     });
 
     card.addEventListener('mousemove', function(e) {
@@ -211,10 +211,10 @@ projectCards.forEach(card => {
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
 
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
+        const rotateX = (y - centerY) / 50;
+        const rotateY = (centerX - x) / 50;
 
-        this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+        this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
     });
 
     card.addEventListener('mouseleave', function() {
